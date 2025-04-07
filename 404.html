@@ -5,13 +5,8 @@
     <title>Redirecting...</title>
     <script>
       sessionStorage.redirect = location.pathname;
-      window.addEventListener('message', e => {
-        if (e.data.type === 'canvasSchema') {
-          sessionStorage.schemaData = e.data.data;
-          window.location.pathname = '/';
-        }
-      });
     </script>
+    <meta http-equiv="refresh" content="0;URL='/'">
   </head>
   <body>
     Redirecting...
